@@ -10,7 +10,7 @@ with open(file, "r") as d:
 cards = deck.split("\n")
 
 for iter, i in enumerate(cards):
-    cards[iter] = i.split(":")
+    cards[iter] = i.split(",")
 
 def show_card(card, front):
     print(chr(27) + "[2J")
