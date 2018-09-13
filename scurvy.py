@@ -14,7 +14,10 @@ for iter, i in enumerate(cards):
 
 def show_card(card, front):
     print(chr(27) + "[2J")
-    print("\u001b[45m\n\n\n")
+    if front == True:
+        print("\u001b[45m\n\n\n")
+    else:
+        print("\u001b[44m\n\n\n")
     if front == True:
         print(card[0])
     else:
