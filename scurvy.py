@@ -31,7 +31,7 @@ def loop_input(current_card, front, deck):
         side = "front"
     else:
         side = "back"
-    print("Card {card} of {total}. {side}".format(card = current_card, total = len(deck), side = side))
+    print("🂠 {card} of {total}. {side}".format(card = current_card, total = len(deck), side = side))
     i = input("vi keys:\n")
     if i == "l":
         current_card += 1
